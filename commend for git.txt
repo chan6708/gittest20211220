@@ -1,0 +1,6 @@
+git init <-- start
+git status <-- status
+git add <-- from file to the git index (the interval space beteween git and the base file)
+git commit -m "something" <-- commit git file to git space (pass over the git index)
+git config --local user.name "github name"
+git config --local user.email "github email"
