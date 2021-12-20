@@ -4,3 +4,42 @@ git add <-- from file to the git index (the interval space beteween git and the 
 git commit -m "something" <-- commit git file to git space (pass over the git index)
 git config --local user.name "github name"
 git config --local user.email "github email"
+
+1. git 저장소 만들기
+  -> git init
+
+2. git 상태 보기
+  -> git status
+
+3. 특정 파일을 index에 올리기
+  -> git add 파일명
+
+4. 유저 등록
+   - github.com 가입
+   - github 유저 정보 등록
+     - git config --local user.name "github닉네임"
+     - git config --local user.email "github이메일"
+
+5. 깃 저장소에 커밋
+  - git commit -m "작업 메시지"
+
+6. 깃 원격 저장소 발급
+  - github.com에서 repository 생성
+
+7. github.com에서 access token 발급 받기
+  - 마이메뉴 - settings - Developer Settings - Personal access tokens 
+- Generate new token - repo 체크 - Generate token - token값 저장
+
+8. 원격저장소 별명짓기
+- git remote add 별명 원격저장소주소
+
+9. 원격저장소에 소스코드 밀어넣기
+  - git push 원격저장소주소 master
+
+10. 원격저장소의 소스코드 가져오기
+  - 프로젝트 폴더 만들고
+  - git init으로 git 저장소 만들고
+  - 유저등록(4번 과정)
+  - git pull 원격저장소주소 master
+
+** 프로젝트가 바뀌면 repository 새로 만들어야 함.
